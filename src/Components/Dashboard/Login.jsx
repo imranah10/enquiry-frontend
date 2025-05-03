@@ -10,7 +10,7 @@ export const Login = ({ setIsLoggedIn }) => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:8000/api/admin', {
+      const res = await axios.post('https://enquiry-backend-lg9v.onrender.com/api/admin', {
         username,
         password,
       });

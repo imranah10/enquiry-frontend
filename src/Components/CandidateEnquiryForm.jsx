@@ -31,7 +31,7 @@ const CandidateEnquiryForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:8000/api/enquiry', formdata);
+      const response = await axios.post('https://enquiry-backend-lg9v.onrender.com/api/enquiry', formdata);
       if (response.status === 201) {
         alert('Form submitted successfully!');
         setFormdata({
