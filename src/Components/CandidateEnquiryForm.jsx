@@ -31,9 +31,9 @@ const CandidateEnquiryForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('https://enquiry-backend-lg9v.onrender.com/api/enquiry', formdata);
+      const response = await axios.post('https://enquiry-frontend.vercel.app/api/enquiry', formdata);
       if (response.status === 201) {
-        alert('Form submitted successfully!');
+        alert('Form submitted successfully !');
         setFormdata({
           date: '',
           candidateName: '',

@@ -8,6 +8,7 @@ import { Login } from './Components/Dashboard/Login';
 import { Dashboard } from './Components/Dashboard/Dashboard';
 import { use } from 'react';
 
+
 function App() {
   const[isLoggedIn, setIsLoggedIn] = useState(false);
  useEffect(() => {
@@ -27,6 +28,7 @@ function App() {
     
  
   <BrowserRouter>
+  
     <Routes>
       <Route path="/" element={<CandidateEnquiryForm />} />
     

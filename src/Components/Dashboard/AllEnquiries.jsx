@@ -5,7 +5,8 @@ export const AllEnquiries = () => {
   const [enquiries, setEnquiries] = useState([]);
   const fetchEnquiries = async () => {
     try {
-      const response = await axios.get('http://localhost:8000/api/getenquiries');
+     const response = await axios.get('https://enquiry-backend-lg9v.onrender.com/api/getenquiries');
+
       setEnquiries(response.data);
     } catch (error) {
       console.error('Error fetching enquiries:', error);
